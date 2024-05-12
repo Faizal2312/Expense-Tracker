@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>Expense Tacker</title>
+</head>
+<body>
+    <div class="main">
+        <div class="detail">
+
+            <h1>Expense Tracker</h1>
+            <input type="text" id="desc">
+            <select name="category" id="cat">
+                <option value="">Select Category</option>
+                <option value="food">Food</option>
+                <option value="transportation">Tansportation</option>
+                <option value="utilities">Utilities</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="others">others</option>
+            </select>
+            <input type="number" id="amount">
+            <button id="add">Add Expense</button>
+        </div>
+        <div class="show">
+
+            <h1>Expense Summary</h1>
+            <table id="tbl">
+                <tr>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
